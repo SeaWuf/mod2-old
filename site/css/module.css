@@ -3,6 +3,11 @@ html, body {
   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
   font-size: 115%;
 }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 body {
   background-color: #ffebcc;
   color: #4d3900;
@@ -17,40 +22,66 @@ h1, h2 {
 h1 {
   font-size: 2.5rem;
   text-align: center;
+  padding-top: 25px;
 }
 /* div { */
   /* background-color: lightcyan; */
   /* margin-bottom: 20px; */
   /* padding: 0 25px 15px 25px; */
 /* } */
+div {
+  width: 29.2%;
+  min-width: 300px;
+  /*border: 1px solid black;*/
+  float: left;
+  padding: 15px;
+  margin-left: 3%;
+  margin-right: 0%;
+  margin: 25px 0 10px 3%;
+}
 .menuItem {
   background-color: #ccccff;
-  padding: 10px;
+  /* padding: 0 15px 15px; */
+  /* padding: 10px; */
   border: 3px solid #101000;
   /* width: 30%; */
-  display: inline-block;
+  /* display: inline-block; */
   /* margin: 0 auto; */
-  margin: 25px;
-  overflow: auto;
-  max-width: 355px;
-  box-sizing: border-box;
+  /* margin: 25px; */
+  /* overflow: auto; */
+  /* width: 355px; */
+  /* width: 25%; */
+  /* float: left; */
+  /* padding: 10px; */
+  /* height: 50px: */
+  /* max-height: 250px; */
+  /* max-width: 355px; */
+  position: relative;
 }
-.menuLabel {
+h2.menuLabel {
   color: green;
   /* display: block; */
   font-size: 1rem;
   text-align: center;
   /* margin: 0 auto; */
   /* margin: auto; */
-  margin: 0;
-  padding: 5px;
-  display: block;
-  border: 2px #000000 solid;
+  /* margin: 0; */
+  /* padding: 5px; */
+  /* display: block; */
+  border-bottom: 3px #000000 solid;
+  border-left: 3px #000000 solid;
   width: 100px;
+  position: absolute;
+  top: 01px;
+  right: 0px;
+  /* display: inline-block; */
+  /* float: right; */
+  /* margin-bottom: 15px; */
+  /* margin-left: 234px; */
   /* height: 30px; */
 }
-h2 {
-  /* background-color: orange; */
+div.menuItem > p {
+  padding-top: 20px;
 }
 .yellow {
   background-color: #ffff00;
@@ -61,8 +92,11 @@ h2 {
 .green {
   background-color: #00ff55;
 }
+footer {
+  clear: left;
+}
 p#foot {
   color: dimgray;
-  font-size: 0.6rem;
+  font-size: 0.7rem;
   text-align: center;
 }
