@@ -17,10 +17,8 @@ body {
   margin: 0;
   padding: 0;
 }
-/* header {} */
 h1 {
   font-family: Garamond, "Times New Roman", Times, serif;
-  /* font-style: italic; */
   color: #e60000; /* medium red */
   font-size: 1.75rem;
   text-align: center;
@@ -40,14 +38,14 @@ div {
   background-color: #ffdd80; /* light brown */
   border: 3px solid #4d3900; /* dark brown */
   position: relative;
-  font-size: 1.0rem;
+  /* font-size: 100%; */
 }
 h2.menuLabel {
-  color: green;
-  font-size: 1.25rem;
+  color: #e60000; /* light red */
+  font-size: 125%;
   text-align: center;
   border-bottom: 3px #4d3900 solid; /* dark brown */
-  border-left: 3px #4d3900 solid; /* dark brown */
+  border-left: 3px #4d3900 solid;   /* dark brown */
   width: 130px;
   position: absolute;
   top: 0px;
@@ -59,8 +57,8 @@ div.menuItem > p {
 .yellow {
   background-color: #ffff00;
 }
-.red {
-  background-color: #ff9980;
+.blue {
+  background-color: #ccccff;
 }
 .green {
   background-color: #00ff55;
@@ -94,8 +92,9 @@ p#foot {
     min-width: 325px;
   }
   div#menuItemThree {
-    width: 94%;
+    width: 94.2%;
     min-width: 540px;
+    /* font-size: 1rem; */
   }
 }
 
@@ -103,11 +102,6 @@ p#foot {
 @media (max-width: 767px) {
   div {
     width: 94%;
-    min-width: 300px;
+    min-width: 270px;
   }
 }
-
-
-
-
-
