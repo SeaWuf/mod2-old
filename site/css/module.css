@@ -1,7 +1,7 @@
 /*  module.css  05/22/2016  jhm  */
 html, body {
   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-  font-size: 115%;
+  font-size: 22px;
 }
 * {
   box-sizing: border-box;
@@ -14,21 +14,18 @@ body {
   margin: 0;
   padding: 0;
 }
-header {
-}
-h1, h2 {
-  font-family: Arial, Helvetica, sans-serif;
-}
+/* header {} */
 h1 {
-  font-size: 2.5rem;
+  font-family: Garamond, "Times New Roman", Times, serif;
+  /* font-style: italic; */
+  color: #e60000;
+  font-size: 1.75rem;
   text-align: center;
   padding-top: 25px;
 }
-/* div { */
-  /* background-color: lightcyan; */
-  /* margin-bottom: 20px; */
-  /* padding: 0 25px 15px 25px; */
-/* } */
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+}
 div {
   width: 29.2%;
   min-width: 300px;
@@ -40,48 +37,23 @@ div {
   margin: 25px 0 10px 3%;
 }
 .menuItem {
-  background-color: #ccccff;
-  /* padding: 0 15px 15px; */
-  /* padding: 10px; */
-  border: 3px solid #101000;
-  /* width: 30%; */
-  /* display: inline-block; */
-  /* margin: 0 auto; */
-  /* margin: 25px; */
-  /* overflow: auto; */
-  /* width: 355px; */
-  /* width: 25%; */
-  /* float: left; */
-  /* padding: 10px; */
-  /* height: 50px: */
-  /* max-height: 250px; */
-  /* max-width: 355px; */
+  background-color: #ffdd80;
+  border: 3px solid #4d3900;
   position: relative;
 }
 h2.menuLabel {
   color: green;
-  /* display: block; */
-  font-size: 1rem;
+  font-size: 1.25rem;
   text-align: center;
-  /* margin: 0 auto; */
-  /* margin: auto; */
-  /* margin: 0; */
-  /* padding: 5px; */
-  /* display: block; */
-  border-bottom: 3px #000000 solid;
-  border-left: 3px #000000 solid;
-  width: 100px;
+  border-bottom: 3px #4d3900 solid;
+  border-left: 3px #4d3900 solid;
+  width: 130px;
   position: absolute;
-  top: 01px;
+  top: 0px;
   right: 0px;
-  /* display: inline-block; */
-  /* float: right; */
-  /* margin-bottom: 15px; */
-  /* margin-left: 234px; */
-  /* height: 30px; */
 }
 div.menuItem > p {
-  padding-top: 20px;
+  padding-top: 30px;
 }
 .yellow {
   background-color: #ffff00;
@@ -96,7 +68,30 @@ footer {
   clear: left;
 }
 p#foot {
-  color: dimgray;
+  color: #808080; /* dimgray */
   font-size: 0.7rem;
+  font-style: italic;
   text-align: center;
 }
+
+/* ==================================================== */
+/* =================== Device Sizes =================== */
+/* ==================================================== */
+
+/******************** Larger Devices **** (desktop) *****/
+@media (min-width: 992px) {
+  #menuItemOne {}
+  #menuItemTwo {}
+  #menuItemThree {}
+}
+
+/******************** Medium Devices ***** (tablet) *****/
+@media (min-width: 768px) and (max-width: 991px) {}
+
+/******************* Smaller Devices ***** (mobile) *****/
+@media (max-width: 767px) {}
+
+
+
+
+
