@@ -40,6 +40,7 @@ div {
   background-color: #ffdd80; /* light brown */
   border: 3px solid #4d3900; /* dark brown */
   position: relative;
+  font-size: 1.0rem;
 }
 h2.menuLabel {
   color: green;
